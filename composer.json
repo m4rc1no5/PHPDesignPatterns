@@ -10,5 +10,8 @@
       "homepage": "http://marceen.pl",
       "email": "marcin.zaremba@gmail.com"
     }
-  ]
+  ],
+  "require": {
+    "php": ">=5.3.2"
+  }
 }
