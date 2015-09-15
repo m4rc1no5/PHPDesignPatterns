@@ -1,0 +1,14 @@
+{
+  "name": "m4rc1no5/php-design-patterns",
+  "description": "Design patterns for PHP",
+  "keywords": ["PHP", "Design Patterns"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marcin Zaremba",
+      "homepage": "http://marceen.pl",
+      "email": "marcin.zaremba@gmail.com"
+    }
+  ]
+}
