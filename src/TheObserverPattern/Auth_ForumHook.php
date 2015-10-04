@@ -1,26 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marcinos
- * Date: 02.10.15
- * Time: 13:42
- */
 
 namespace PHPDesignPatterns\src\TheObserverPattern;
 
-use PHPDesignPatterns\src\HasColorBashPrompt;
-use PHPDesignPatterns\src\HasColorBashPromptInterface;
-
-class Auth_ForumHook extends Observer implements HasColorBashPromptInterface
+/**
+ * Class Auth_ForumHook
+ * @package PHPDesignPatterns\src\TheObserverPattern
+ */
+class Auth_ForumHook extends Observer
 {
-	use HasColorBashPrompt;
-
-	function login($subject) {
+	function login(Auth $auth) {
 		$text = "Auth_ForumHook login\n";
-		echo $this->colorBashPrompt->write($text, \ColorBashPrompt::BLUE);
+		echo $auth->getColorBashPrompt()->write($text, \ColorBashPrompt::BLUE);
 	}
 
-	function logout($subject) {
+	function logout(Subject $subject) {
 		// call the forum's API functions to log the user out
 		// ...
 	}

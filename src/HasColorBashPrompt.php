@@ -1,22 +1,32 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marcinos
- * Date: 04.10.15
- * Time: 16:50
- */
 
 namespace PHPDesignPatterns\src;
 
 use ColorBashPrompt;
 
+/**
+ * Class HasColorBashPrompt
+ * @package PHPDesignPatterns\src
+ */
 trait HasColorBashPrompt
 {
     /** @var ColorBashPrompt */
     protected $colorBashPrompt;
 
+    /**
+     * @param ColorBashPrompt $colorBashPrompt
+     */
     public function setColorBashPrompt(ColorBashPrompt $colorBashPrompt)
     {
         $this->colorBashPrompt = $colorBashPrompt;
     }
+
+    /**
+     * @return ColorBashPrompt
+     */
+    public function getColorBashPrompt()
+    {
+        return $this->colorBashPrompt;
+    }
+
 }

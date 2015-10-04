@@ -1,24 +1,28 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: marcinos
- * Date: 02.10.15
- * Time: 13:41
- */
 
 namespace PHPDesignPatterns\src\TheObserverPattern;
 
+/**
+ * Class Subject
+ * @package PHPDesignPatterns\src\TheObserverPattern
+ */
 abstract class Subject
 {
 	protected $observers;
 	protected $state;
 
+	/**
+	 * Constructor - sets our variables
+	 */
 	public function __construct()
 	{
 		$this->observers = array();
 		$this->state = null;
 	}
 
+	/**
+	 * @param Observer $observer
+	 */
 	public function attach(Observer $observer)
 	{
 		$i = array_search($observer, $this->observers);
@@ -27,6 +31,9 @@ abstract class Subject
 		}
 	}
 
+	/**
+	 * @param Observer $observer
+	 */
 	public function detach(Observer $observer)
 	{
 		if (!empty($this->observers)) {
@@ -37,27 +44,39 @@ abstract class Subject
 		}
 	}
 
+	/**
+	 * @return string
+	 */
 	public function getState()
 	{
 		return $this->state;
 	}
 
+	/**
+	 * @param string $state
+	 */
 	public function setState($state)
 	{
 		$this->state = $state;
 		$this->notify();
 	}
 
+	/**
+	 *
+	 */
 	public function notify()
 	{
 		if (!empty($this->observers)) {
+			/** @var Observer $observer */
 			foreach ($this->observers as $observer) {
 				$observer->update($this);
 			}
 		}
 	}
 
-
+	/**
+	 * @return array
+	 */
 	public function getObservers()
 	{
 		return $this->observers;

@@ -2,16 +2,27 @@
 
 namespace PHPDesignPatterns\src\TheObserverPattern;
 
+/**
+ * Class Observer
+ * @package PHPDesignPatterns\src\TheObserverPattern
+ */
 abstract class Observer
 {
-	public function __construct($subject = null)
+
+	/**
+	 * @param Subject|null $subject
+	 */
+	public function __construct(Subject $subject = null)
 	{
 		if (is_object($subject) && $subject instanceof Subject) {
 			$subject->attach($this);
 		}
 	}
 
-	public function update($subject)
+	/**
+	 * @param Subject $subject
+	 */
+	public function update(Subject $subject)
 	{
 		// looks for an observer method with the state name
 		if (method_exists($this, $subject->getState())) {
