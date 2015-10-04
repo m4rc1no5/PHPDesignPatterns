@@ -6,9 +6,7 @@
  * Time: 13:42
  */
 
-namespace PHPDesignPatterns\examples\TheObserverPattern;
-
-use PHPDesignPatterns\src\TheObserverPattern\Observer;
+namespace PHPDesignPatterns\src\TheObserverPattern;
 
 class Auth_ForumHook extends Observer
 {

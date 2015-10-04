@@ -1,8 +1,9 @@
 <?php
-include 'autoload.php';
 
-use PHPDesignPatterns\examples\TheObserverPattern\Auth;
-use PHPDesignPatterns\examples\TheObserverPattern\Auth_ForumHook;
+require __DIR__ . '/../../vendor/autoload.php';
+
+use PHPDesignPatterns\src\TheObserverPattern\Auth;
+use PHPDesignPatterns\src\TheObserverPattern\Auth_ForumHook;
 
 $auth = new Auth();
 // attach an observer

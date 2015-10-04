@@ -6,15 +6,16 @@
  * Time: 13:41
  */
 
-namespace PHPDesignPatterns\examples\TheObserverPattern;
+namespace PHPDesignPatterns\src\TheObserverPattern;
 
-use PHPDesignPatterns\src\TheObserverPattern\Subject;
+use ColorBashPrompt;
 
 class Auth extends Subject
 {
 	function login()
 	{
-		echo "Auth login";
+		$bash = new ColorBashPrompt();
+		echo $bash->write("Auth login\n", ColorBashPrompt::RED);
 
 		// signal any observers that the user has logged in
 		$this->setState("login");

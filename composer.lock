@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "1b03913d2901e5cb555d3e77517ade16",
+    "packages": [
+        {
+            "name": "m4rc1no5/color-bash-prompt",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/m4rc1no5/ColorBashPrompt.git",
+                "reference": "27aeeaee899a391d2da747dcd9bd8585642bc805"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/m4rc1no5/ColorBashPrompt/zipball/27aeeaee899a391d2da747dcd9bd8585642bc805",
+                "reference": "27aeeaee899a391d2da747dcd9bd8585642bc805",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ColorBashPrompt": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Zaremba",
+                    "email": "marcin.zaremba@gmail.com",
+                    "homepage": "http://marceen.pl"
+                }
+            ],
+            "description": "Color your bash commands",
+            "keywords": [
+                "design patterns",
+                "php"
+            ],
+            "time": "2015-10-04 09:02:40"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "m4rc1no5/color-bash-prompt": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

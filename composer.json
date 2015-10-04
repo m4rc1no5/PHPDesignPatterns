@@ -1,0 +1,12 @@
+{
+    "require": {
+	    "m4rc1no5/color-bash-prompt": "@dev"
+    },
+    "autoload": {
+        "psr-0": {
+            "": [
+                "src/"
+            ]
+        }
+    }
+}
