@@ -11,6 +11,7 @@ before_script:
   - composer self-update
   - composer global require phpunit/phpunit --no-update
   - composer install
-  - echo 'xdebug.max_nesting_level=9999'
+  - export ADDITIONAL_PATH=`php -i | grep -F --color=never 'Scan this dir for additional .ini files'`
+  - echo 'xdebug.max_nesting_level=9999' | sudo tee ${ADDITIONAL_PATH:42}/symfony2.ini
 
 script: phpunit -c phpunit.xml
