@@ -8,10 +8,7 @@ php:
 #  - 7.0
 
 before_script:
-  - composer self-update
-  - composer global require phpunit/phpunit --no-update
-  - composer install
-  - export ADDITIONAL_PATH=`php -i | grep -F --color=never 'Scan this dir for additional .ini files'`
-  - echo 'xdebug.max_nesting_level=9999' | sudo tee ${ADDITIONAL_PATH:42}/symfony2.ini
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar --dev install
 
-script: phpunit -c phpunit.xml
+script: phpunit --configuration tests/phpunit.xml
