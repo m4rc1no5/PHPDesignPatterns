@@ -1,6 +1,8 @@
 # PHPDesignPatterns
 Design Patterns in PHP
 
+[![Build Status](https://travis-ci.org/m4rc1no5/PHPDesignPatterns.svg?branch=master)](https://travis-ci.org/m4rc1no5/PHPDesignPatterns)
+
 Documentation
 =============
 
