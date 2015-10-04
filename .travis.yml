@@ -11,5 +11,6 @@ before_script:
   - composer self-update
   - composer global require phpunit/phpunit --no-update
   - composer install
+  - echo 'xdebug.max_nesting_level=9999'
 
 script: phpunit -c phpunit.xml
