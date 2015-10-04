@@ -16,12 +16,14 @@ Installation
 
 After download PHPDesignPatterns You must use composer to load all dependecies.
 
-```composer install -o
+```
+    composer install -o
 ```
 
 Update dependecies: 
 
-```composer update -o
+```
+    composer update -o
 ```
 
 <a name="run"></a>
@@ -30,6 +32,7 @@ Run examples
 
 You can run examples using commands like this:
 
-```php examples/TheObserverPattern/example_01.php
+```
+    php examples/TheObserverPattern/example_01.php
 ```
 
