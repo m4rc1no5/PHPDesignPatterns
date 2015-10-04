@@ -13,10 +13,8 @@ $colorBashPrompt = new ColorBashPrompt();
 $auth = new Auth();
 $auth->setColorBashPrompt($colorBashPrompt);
 
-// create Auth_ForumHook - Observer
-$auth_forum = new Auth_ForumHook();
-//$auth_forum->setColorBashPrompt($colorBashPrompt);
-
 // attach an observer to subject
-$auth->attach($auth_forum);
+$auth->attach(new Auth_ForumHook());
+
+//login
 $auth->login();
