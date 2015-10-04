@@ -8,14 +8,17 @@
 
 namespace PHPDesignPatterns\src\TheObserverPattern;
 
+use PHPDesignPatterns\src\HasColorBashPrompt;
 use ColorBashPrompt;
+use PHPDesignPatterns\src\HasColorBashPromptInterface;
 
-class Auth extends Subject
+class Auth extends Subject implements HasColorBashPromptInterface
 {
+	use HasColorBashPrompt;
+
 	function login()
 	{
-		$bash = new ColorBashPrompt();
-		echo $bash->write("Auth login\n", ColorBashPrompt::RED);
+		echo $this->colorBashPrompt->write("Auth login\n", ColorBashPrompt::RED);
 
 		// signal any observers that the user has logged in
 		$this->setState("login");

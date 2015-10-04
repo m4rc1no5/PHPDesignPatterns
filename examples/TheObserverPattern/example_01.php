@@ -5,8 +5,12 @@ require __DIR__ . '/../../vendor/autoload.php';
 use PHPDesignPatterns\src\TheObserverPattern\Auth;
 use PHPDesignPatterns\src\TheObserverPattern\Auth_ForumHook;
 
+$colorBashPrompt = new ColorBashPrompt();
 $auth = new Auth();
-// attach an observer
-$auth->attach(new Auth_ForumHook());
+$auth->setColorBashPrompt($colorBashPrompt);
+$auth_forum = new Auth_ForumHook();
+$auth_forum->setColorBashPrompt($colorBashPrompt);
 
+// attach an observer to subject
+$auth->attach($auth_forum);
 $auth->login();

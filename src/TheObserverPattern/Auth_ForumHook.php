@@ -8,10 +8,16 @@
 
 namespace PHPDesignPatterns\src\TheObserverPattern;
 
-class Auth_ForumHook extends Observer
+use PHPDesignPatterns\src\HasColorBashPrompt;
+use PHPDesignPatterns\src\HasColorBashPromptInterface;
+
+class Auth_ForumHook extends Observer implements HasColorBashPromptInterface
 {
+	use HasColorBashPrompt;
+
 	function login($subject) {
-		echo "Auth_ForumHook login";
+		$text = "Auth_ForumHook login\n";
+		echo $this->colorBashPrompt->write($text, \ColorBashPrompt::BLUE);
 	}
 
 	function logout($subject) {
