@@ -44,6 +44,8 @@ You can run examples using commands like this:
 The Observer Pattern
 --------------------
 
+This example is base on http://www.sitepoint.com/understanding-the-observer-pattern/
+
 ```
     php examples/TheObserverPattern/example_01.php
 ```
@@ -51,6 +53,8 @@ The Observer Pattern
 <a name="the_mediator_pattern"></a>
 The Mediator Pattern
 --------------------
+
+This example is base on https://sourcemaking.com/design_patterns/mediator/php
 
 ```
     php examples/TheMediatorPattern/example_01.php
