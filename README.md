@@ -2,6 +2,7 @@
 Design Patterns in PHP
 
 [![Build Status](https://travis-ci.org/m4rc1no5/PHPDesignPatterns.svg?branch=master)](https://travis-ci.org/m4rc1no5/PHPDesignPatterns)
+[![Coverage Status](https://coveralls.io/repos/m4rc1no5/PHPDesignPatterns/badge.svg?branch=master&service=github)](https://coveralls.io/github/m4rc1no5/PHPDesignPatterns?branch=master)
 
 Documentation
 =============
