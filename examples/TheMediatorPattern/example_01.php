@@ -36,3 +36,4 @@ echo $cbp->writeln('title: ' . $title->getTitle());
 echo $cbp->writeln('');
 
 echo $cbp->writeln('END TESTING MEDIATOR PATTERN', ColorBashPrompt::YELLOW);
+
