@@ -11,6 +11,8 @@ Table of contents
 
 1. [Installation](#Installation)
 2. [Run examples](#run)
+3. [The Observer Pattern](#the_observer_pattern)
+4. [The Mediator Pattern](#the_mediator_pattern)
 
 <a name="installation"></a>
 Installation
@@ -38,3 +40,18 @@ You can run examples using commands like this:
     php examples/TheObserverPattern/example_01.php
 ```
 
+<a name="the_observer_pattern"></a>
+The Observer Pattern
+--------------------
+
+```
+    php examples/TheObserverPattern/example_01.php
+```
+
+<a name="the_mediator_pattern"></a>
+The Mediator Pattern
+--------------------
+
+```
+    php examples/TheMediatorPattern/example_01.php
+```
