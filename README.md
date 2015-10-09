@@ -14,6 +14,7 @@ Table of contents
 2. [Run examples](#run)
 3. [The Observer Pattern](#the_observer_pattern)
 4. [The Mediator Pattern](#the_mediator_pattern)
+5. [The Composite Pattern](#the_composite_pattern)
 
 <a name="installation"></a>
 Installation
@@ -59,4 +60,12 @@ This example is base on https://sourcemaking.com/design_patterns/mediator/php
 
 ```
     php examples/TheMediatorPattern/example_01.php
+```
+
+<a name="the_composite_pattern"></a>
+The Composite Pattern
+--------------------
+
+```
+    php examples/TheCompositePattern/example_01.php
 ```
