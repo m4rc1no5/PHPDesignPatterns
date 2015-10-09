@@ -28,7 +28,7 @@ class SingleToy extends Toy
      */
     public function getName()
     {
-        return $this->name;
+        return $this->name . "\n";
     }
 
     public function add(Toy $toy)
