@@ -11,18 +11,7 @@ namespace PHPDesignPatterns\src\TheCompositePattern;
 
 abstract class Toy
 {
-    private $name;
-    private $price;
-
-    public function __constructor($name, $price)
-    {
-        $this->name = $name;
-        $this->price = $price;
-    }
-
-
-
-    abstract function getName();
-
-    abstract function getPrice();
+    abstract public function getName();
+    abstract public function add(Toy $toy);
+    abstract public function remove(Toy $toy);
 }
