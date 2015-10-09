@@ -33,3 +33,15 @@ echo $cbp->write($pitch->getName(), ColorBashPrompt::BLUE);
 echo $cbp->writeln("Remove toy from composite toy:", ColorBashPrompt::GREEN);
 $pitch->remove($footballer);
 echo $cbp->write($pitch->getName(), ColorBashPrompt::BLUE);
+
+//create new composite toy and add it to other composite toy
+echo $cbp->writeln("Create new composite toy and add it to other composite toy:", ColorBashPrompt::GREEN);
+$post = new SingleToy("Slupek");
+$crossbar = new SingleToy("Poprzeczka");
+$net = new SingleToy("Siatka");
+$bramka = new CompositeToy();
+$bramka->add($post);
+$bramka->add($crossbar);
+$bramka->add($net);
+$pitch->add($bramka);
+echo $cbp->write($pitch->getName(), ColorBashPrompt::BLUE);
