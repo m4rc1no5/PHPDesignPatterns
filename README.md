@@ -19,16 +19,22 @@ Table of contents
 Installation
 ------------
 
-After download PHPDesignPatterns You must use composer to load all dependecies.
+After download PHPDesignPatterns You must download composer.phar
 
 ```
-    composer install -o
+curl -sS https://getcomposer.org/installer | php
+```
+
+and use composer to load all dependecies
+
+```
+php composer.phar install -o
 ```
 
 Update dependecies: 
 
 ```
-    composer update -o
+php composer.phar update -o
 ```
 
 <a name="run"></a>
@@ -38,7 +44,7 @@ Run examples
 You can run examples using commands like this:
 
 ```
-    php examples/TheObserverPattern/example_01.php
+php examples/TheObserverPattern/example_01.php
 ```
 
 <a name="the_observer_pattern"></a>
