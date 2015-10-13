@@ -14,8 +14,19 @@ class MazeGame
 	public function createMaze()
 	{
 		$maze = new Maze();
-		$r1 = new Room(1);
-		$r2 = new Room(2);
-		$the_door = new Door($r1, $r2);
+
+		$r1 = $maze->getRoom(1);
+		if($r1 == null){
+			$r1 = new Room(1);
+		}
+		$r2 = $maze->getRoom(2);
+
+		if($r2 == null){
+			$r2 = new Room(2);
+		}
+		$maze->addRoom($r1);
+		$maze->addRoom($r2);
+
+		return $maze;
 	}
 }

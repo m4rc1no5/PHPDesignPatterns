@@ -11,6 +11,22 @@ namespace PHPDesignPatterns\src\TheObserverPattern;
 
 class Maze
 {
-	public function addRoom(Room $room){}
+	private $ar_rooms = [];
+
+	public function addRoom(Room $room)
+	{
+		array_push($this->ar_rooms, $room);
+	}
+
+	public function getRoom($room_number)
+	{
+		/** @var Room $room */
+		foreach ($this->ar_rooms as $room) {
+			if($room->getRoomNumber() == $room_number){
+				return $room;
+			}
+		}
+		return false;
+	}
 
 }

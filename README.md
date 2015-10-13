@@ -14,6 +14,7 @@ Table of contents
 3. [The Observer Pattern](#the_observer_pattern)
 4. [The Mediator Pattern](#the_mediator_pattern)
 5. [The Composite Pattern](#the_composite_pattern)
+6. [The Builder Pattern](#the_builder_pattern)
 
 <a name="installation"></a>
 Installation
@@ -146,7 +147,7 @@ END TESTING MEDIATOR PATTERN
 ```
 <a name="the_composite_pattern"></a>
 The Composite Pattern
---------------------
+---------------------
 
 command:
 
@@ -220,3 +221,50 @@ Slupek
 Poprzeczka
 Siatka
 ```
+
+<a name="the_builder_pattern"></a>
+The Builder Pattern
+---------------------
+
+Without builder:
+
+```php
+class MazeGame
+{
+	public function createMaze()
+	{
+		$maze = new Maze();
+
+		$r1 = $maze->getRoom(1);
+		if($r1 == null){
+			$r1 = new Room(1);
+		}
+		$r2 = $maze->getRoom(2);
+
+		if($r2 == null){
+			$r2 = new Room(2);
+		}
+		$maze->addRoom($r1);
+		$maze->addRoom($r2);
+
+		return $maze;
+	}
+}
+```
+
+With builder pattern:
+
+```php
+class MazeGame2
+{
+    public function createMaze(MazeBuilder $mazeBuilder)
+    {
+        $mazeBuilder->buildMaze();
+        $mazeBuilder->buildRoom(1);
+        $mazeBuilder->buildRoom(2);
+        return $mazeBuilder->getMaze();
+    }
+}
+```
+
+Look at example 01 and 02 to see the difference.
