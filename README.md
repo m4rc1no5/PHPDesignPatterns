@@ -9,18 +9,26 @@ Documentation
 Table of contents
 -----------------
 
-1. [Installation](#Installation)
-2. [Run examples](#run)
-3. [The Observer Pattern](#the_observer_pattern)
-4. [The Mediator Pattern](#the_mediator_pattern)
-5. [The Composite Pattern](#the_composite_pattern)
-6. [The Builder Pattern](#the_builder_pattern)
+1. [Introduction](#intro)
+2. [Installation project](#install)
+3. [Update project](#update)
+4. [Run examples](#run)
+5. [The Observer Pattern](#the_observer_pattern)
+6. [The Mediator Pattern](#the_mediator_pattern)
+7. [The Composite Pattern](#the_composite_pattern)
+8. [The Builder Pattern](#the_builder_pattern)
 
-<a name="installation"></a>
+<a name="intro"></a>
+Introduction
+------------
+
+Inspiration to this project was fantastic polish book about design patterns: **WZORCE PROJEKTOWE Elementy oprogramowania obiektowego wielokrotnego użytku** - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides. I wanted to translate examples from this book to PHP language.
+ 
+<a name="install"></a>
 Installation
 ------------
 
-After download PHPDesignPatterns You must download composer.phar
+First of all you must download project PHPDesignPatterns. After this You must download the composer.phar
 
 ```
 curl -sS https://getcomposer.org/installer | php
@@ -38,6 +46,24 @@ Update dependecies:
 php composer.phar update -o
 ```
 
+<a name="update"></a>
+Update Project
+--------------
+
+When You want to update this Project via Git You must write
+
+```
+git pull origin master
+```
+
+and then write
+
+```
+php composer.phar update -o
+```
+
+Update Composer is important to refresh autoload map.
+
 <a name="run"></a>
 Run examples
 ------------
@@ -53,6 +79,9 @@ The Observer Pattern
 --------------------
 
 This example is base on http://www.sitepoint.com/understanding-the-observer-pattern/
+
+definition (in Polish):
+*Obserwator określa zależność "jeden do wielu" między obiektami. Kiedy zmieni się stan jednego z obiektów, wszystkie obiekty zależne od niego są o tym automatycznie powiadamiane i aktualizowane.*
 
 command:
 ```
@@ -86,6 +115,9 @@ The Mediator Pattern
 --------------------
 
 This example is base on https://sourcemaking.com/design_patterns/mediator/php
+
+definition (in Polish):
+*Mediator określa obiekt kapsułkujący informacje o interakcji między obiektami z danego zbioru. Wzorzec ten pomaga zapewnić luźne powiązanie, ponieważ zapobiega bezpośredniemu odwoływaniu się obiektów do siebie i umożliwia niezależne modyfikowanie interakcji między nimi.*
 
 command:
 ```
@@ -148,6 +180,9 @@ END TESTING MEDIATOR PATTERN
 <a name="the_composite_pattern"></a>
 The Composite Pattern
 ---------------------
+
+definition (in Polish):
+*Kompozyt składa obiekty w struktury drzewiaste odzwierciedlające hierarchię typu część-całość. Wzorzec ten umożliwia klientom traktowanie poszczególnych obiektów i ich złożeń w taki sam sposób.*
 
 command:
 
@@ -225,6 +260,11 @@ Siatka
 <a name="the_builder_pattern"></a>
 The Builder Pattern
 ---------------------
+
+This example is based on book "Wzorce Projektowe, Elementy oprogramowania obiektowego wielokrotnego użytku" - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
+
+definition (in Polish):
+*Budowniczy (Builder) oddziela tworzenie złożonego obiektu od jego reprezentacji, dzięki czemu ten sam proces konstrukcji może prowadzić do powstawania różnych reprezentacji.*
 
 Without builder:
 
