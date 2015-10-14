@@ -80,15 +80,15 @@ The Observer Pattern
 
 This example is base on http://www.sitepoint.com/understanding-the-observer-pattern/
 
-definition (in Polish):
+###definition (in Polish):###
 *Obserwator określa zależność "jeden do wielu" między obiektami. Kiedy zmieni się stan jednego z obiektów, wszystkie obiekty zależne od niego są o tym automatycznie powiadamiane i aktualizowane.*
 
-command:
+###command:###
 ```
 php examples/TheObserverPattern/example_01.php
 ```
 
-example:
+###example:###
 ```php
 // create ColorBashPrompt
 $colorBashPrompt = new ColorBashPrompt();
@@ -116,15 +116,15 @@ The Mediator Pattern
 
 This example is base on https://sourcemaking.com/design_patterns/mediator/php
 
-definition (in Polish):
+###definition (in Polish):###
 *Mediator określa obiekt kapsułkujący informacje o interakcji między obiektami z danego zbioru. Wzorzec ten pomaga zapewnić luźne powiązanie, ponieważ zapobiega bezpośredniemu odwoływaniu się obiektów do siebie i umożliwia niezależne modyfikowanie interakcji między nimi.*
 
-command:
+###command:###
 ```
 php examples/TheMediatorPattern/example_01.php
 ```
 
-example:
+###example:###
 ```php
 // create ColorBashPrompt
 $cbp = new ColorBashPrompt();
@@ -181,17 +181,15 @@ END TESTING MEDIATOR PATTERN
 The Composite Pattern
 ---------------------
 
-definition (in Polish):
+###definition (in Polish):###
 *Kompozyt składa obiekty w struktury drzewiaste odzwierciedlające hierarchię typu część-całość. Wzorzec ten umożliwia klientom traktowanie poszczególnych obiektów i ich złożeń w taki sam sposób.*
 
-command:
-
+###command:###
 ```
     php examples/TheCompositePattern/example_01.php
 ```
 
-example:
-
+###example:###
 ```php
 // create ColorBashPrompt
 $cbp = new ColorBashPrompt();
@@ -263,7 +261,7 @@ The Builder Pattern
 
 This example is based on book "Wzorce Projektowe, Elementy oprogramowania obiektowego wielokrotnego użytku" - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides.
 
-definition (in Polish):
+###definition (in Polish):###
 *Budowniczy (Builder) oddziela tworzenie złożonego obiektu od jego reprezentacji, dzięki czemu ten sam proces konstrukcji może prowadzić do powstawania różnych reprezentacji.*
 
 Without builder:
