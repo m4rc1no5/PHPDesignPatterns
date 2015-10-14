@@ -104,7 +104,7 @@ $auth->attach(new Auth_ForumHook());
 $auth->login();
 ```
 
-output:
+###output:###
 ```text
 Auth login
 Auth_ForumHook login
@@ -159,7 +159,7 @@ echo $cbp->writeln('');
 echo $cbp->writeln('END TESTING MEDIATOR PATTERN', ColorBashPrompt::YELLOW);
 ```
 
-output:
+###output:###
 ```text
 BEGIN TESTING MEDIATOR PATTERN
 
@@ -232,7 +232,7 @@ $pitch->add($bramka);
 echo $cbp->write($pitch->getName(), ColorBashPrompt::BLUE);
 ```
 
-output:
+###output:###
 
 ```text
 Single toy:
