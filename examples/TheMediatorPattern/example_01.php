@@ -3,7 +3,7 @@
 // autoload from composer
 require __DIR__ . '/../../vendor/autoload.php';
 
-use PHPDesignPatterns\src\TheMediatorPattern\BookMediator;
+use PHPDesignPatterns\TheMediatorPattern\BookMediator;
 
 // create ColorBashPrompt
 $cbp = new ColorBashPrompt();

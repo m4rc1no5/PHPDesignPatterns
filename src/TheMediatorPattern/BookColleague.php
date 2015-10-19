@@ -6,7 +6,7 @@
  * Time: 21:52
  */
 
-namespace PHPDesignPatterns\src\TheMediatorPattern;
+namespace PHPDesignPatterns\TheMediatorPattern;
 
 
 abstract class BookColleague

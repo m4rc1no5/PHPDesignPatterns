@@ -6,7 +6,7 @@
  * Time: 14:43
  */
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheBuilderPattern;
 
 
 class Door implements MapSite

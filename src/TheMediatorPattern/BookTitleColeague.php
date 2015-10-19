@@ -6,7 +6,7 @@
  * Time: 21:54
  */
 
-namespace PHPDesignPatterns\src\TheMediatorPattern;
+namespace PHPDesignPatterns\TheMediatorPattern;
 
 
 class BookTitleColleague extends BookColleague

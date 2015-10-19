@@ -6,7 +6,7 @@
  * Time: 23:02
  */
 
-namespace PHPDesignPatterns\src\TheCompositePattern;
+namespace PHPDesignPatterns\TheCompositePattern;
 
 
 class SingleToy extends Toy

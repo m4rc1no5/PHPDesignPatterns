@@ -3,8 +3,8 @@
 // autoload from composer
 require __DIR__ . '/../../vendor/autoload.php';
 
-use PHPDesignPatterns\src\TheObserverPattern\Auth;
-use PHPDesignPatterns\src\TheObserverPattern\Auth_ForumHook;
+use PHPDesignPatterns\TheObserverPattern\Auth;
+use PHPDesignPatterns\TheObserverPattern\Auth_ForumHook;
 
 // create ColorBashPrompt
 $colorBashPrompt = new ColorBashPrompt();

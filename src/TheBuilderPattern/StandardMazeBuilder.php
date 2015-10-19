@@ -6,7 +6,7 @@
  * Time: 19:53
  */
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheBuilderPattern;
 
 
 class StandardMazeBuilder extends MazeBuilder

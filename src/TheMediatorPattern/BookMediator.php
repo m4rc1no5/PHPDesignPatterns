@@ -6,8 +6,7 @@
  * Time: 21:51
  */
 
-namespace PHPDesignPatterns\src\TheMediatorPattern;
-
+namespace PHPDesignPatterns\TheMediatorPattern;
 
 class BookMediator
 {

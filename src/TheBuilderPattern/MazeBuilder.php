@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheBuilderPattern;
 
 abstract class MazeBuilder
 {

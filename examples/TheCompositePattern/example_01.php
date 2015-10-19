@@ -3,8 +3,8 @@
 // autoload from composer
 require __DIR__ . '/../../vendor/autoload.php';
 
-use PHPDesignPatterns\src\TheCompositePattern\SingleToy;
-use PHPDesignPatterns\src\TheCompositePattern\CompositeToy;
+use PHPDesignPatterns\TheCompositePattern\SingleToy;
+use PHPDesignPatterns\TheCompositePattern\CompositeToy;
 
 // create ColorBashPrompt
 $cbp = new ColorBashPrompt();

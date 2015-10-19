@@ -8,8 +8,8 @@
 
 namespace PHPDesignPatterns\tests;
 
-use PHPDesignPatterns\src\TheObserverPattern\Auth;
-use PHPDesignPatterns\src\TheObserverPattern\Auth_ForumHook;
+use PHPDesignPatterns\TheObserverPattern\Auth;
+use PHPDesignPatterns\TheObserverPattern\Auth_ForumHook;
 use PHPUnit_Framework_TestCase;
 
 class TheObserverPattern extends PHPUnit_Framework_TestCase
@@ -28,7 +28,7 @@ class TheObserverPattern extends PHPUnit_Framework_TestCase
         $auth->setColorBashPrompt($colorBashPrompt);
 
         //tworzymy mocka klasy AuthForumHook i sprawdzamy czy zostanie wywołana metoda login
-        $auth_forum = $this->getMockBuilder('PHPDesignPatterns\src\TheObserverPattern\Auth_ForumHook')
+        $auth_forum = $this->getMockBuilder('PHPDesignPatterns\TheObserverPattern\Auth_ForumHook')
             ->setMethods(['login'])
             ->getMock();
         $auth_forum->expects($this->once())->method('login');

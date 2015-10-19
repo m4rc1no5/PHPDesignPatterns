@@ -6,7 +6,7 @@
  * Time: 09:29
  */
 
-namespace PHPDesignPatterns\src\TheCompositePattern;
+namespace PHPDesignPatterns\TheCompositePattern;;
 
 
 abstract class Toy

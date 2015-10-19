@@ -6,11 +6,11 @@
  * Time: 13:41
  */
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheObserverPattern;
 
-use PHPDesignPatterns\src\HasColorBashPrompt;
+use PHPDesignPatterns\HasColorBashPrompt;
 use ColorBashPrompt;
-use PHPDesignPatterns\src\HasColorBashPromptInterface;
+use PHPDesignPatterns\HasColorBashPromptInterface;
 
 /**
  * Class Auth

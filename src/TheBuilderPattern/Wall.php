@@ -6,7 +6,7 @@
  * Time: 14:11
  */
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheBuilderPattern;
 
 
 class Wall implements MapSite

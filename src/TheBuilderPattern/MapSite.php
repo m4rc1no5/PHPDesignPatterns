@@ -6,7 +6,7 @@
  * Time: 14:07
  */
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheBuilderPattern;
 
 
 interface MapSite

@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPDesignPatterns\src;
+namespace PHPDesignPatterns;
 
 use ColorBashPrompt;
 

@@ -6,7 +6,7 @@
  * Time: 14:47
  */
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheBuilderPattern;
 
 
 class MazeGame

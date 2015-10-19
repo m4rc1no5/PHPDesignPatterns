@@ -6,7 +6,7 @@
  * Time: 14:08
  */
 
-namespace PHPDesignPatterns\src\TheObserverPattern;
+namespace PHPDesignPatterns\TheBuilderPattern;
 
 
 class Room implements MapSite
